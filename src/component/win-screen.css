@@ -1,0 +1,104 @@
+.WinContainer {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #000000 52%,
+    rgba(255, 6, 6, 0.418) 81%
+  );
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  color: white;
+  flex-direction: column;
+}
+
+.WinContainer h1 {
+  font-size: 50px;
+  padding-top: 1em;
+  text-transform: uppercase;
+  text-shadow: 5px 2px 3px black;
+}
+.Gif {
+  display: flex;
+  justify-content: center;
+}
+
+.winImg {
+  display: flex;
+  height: 19em;
+  justify-content: center;
+}
+
+.WinBtn {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1em;
+  margin-top: 4em;
+}
+
+.WinBtn button {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  /* margin-right: 20%; */
+  /* margin-left: 20%; */
+  color: white;
+  text-transform: uppercase;
+  border-top: 1.5px solid red;
+  border-bottom: 1.5px solid red;
+  border-left: 1.5px solid black;
+  border-right: 1.5px solid black;
+  font-weight: bolder;
+  text-align: center;
+  border-radius: 22px 0 22px 0;
+  transition: 0.9s;
+  cursor: pointer;
+  padding: 1em 2em;
+  background: black;
+}
+.WinBtn button:hover {
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+  background: black;
+  color: red;
+}
+
+@media screen and (max-width: 786px) {
+    .WinContainer h1 {
+      font-size: 40px;
+    }
+  
+    .WinBtn {
+      margin-top: 1em;
+    }
+    .winImg {
+      height: 15em;
+    }
+  }
+  
+
+@media screen and (max-width: 425px) {
+  .WinContainer h1 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 375px) {
+    .WinContainer h1 {
+      font-size: 33px;
+    }
+  }
+  
+@media screen and (max-width: 320px) {
+    .WinContainer h1 {
+      font-size: 28px;
+    }
+    .WintBtn button{
+        line-height: 13px;
+        padding: 10px 24px;
+    }
+  }
+  
+
+

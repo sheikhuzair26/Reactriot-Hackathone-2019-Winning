@@ -1,0 +1,38 @@
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  background: black;
+  color: azure;
+}
+
+.modal.show .modal-dialog {
+  transform: none;
+  background: linear-gradient(to right, #383d41, #ec0404);
+}
+
+video,
+.modal-footer {
+  background: url("./../gifs/fire-15.gif");
+}
+
+.modal-header,
+.modal-footer {
+  border: none;
+}
+
+.backBtn {
+  font-weight: bold;
+  color: #fff;
+  background-color: red;
+  border-color: white;
+}
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  background: url("./../gifs/fire-15.gif");
+}

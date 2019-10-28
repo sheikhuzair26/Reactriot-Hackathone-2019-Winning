@@ -1,0 +1,177 @@
+.InsBg {
+  background: url(./../images/insbg.jpg);
+  background-size: cover;
+  height: 100vh;
+  font-family: "Oswald", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.proceed {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 8em;
+}
+.InsContent {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.329),
+    rgba(255, 0, 0, 0.356)
+  );
+  width: 85vw;
+  height: 85vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 100px 0 100px 0;
+}
+
+.InsContent h1 {
+  text-transform: uppercase;
+  padding: 2em 0em 1em 0em;
+  font-weight: bold;
+}
+.InsContent ul li {
+  list-style: none;
+  margin-bottom: 18px;
+  font-size: 25px;
+  line-height: normal;
+}
+.InsContent h3 {
+  padding: 1%;
+  text-transform: uppercase;
+}
+
+.InsContent button {
+  padding: 1.5% 3.5%;
+  /* float: right; */
+  margin-right: 5%;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  border-top: 1.5px solid red;
+  border-bottom: 1.5px solid red;
+  border-left: 1.5px solid black;
+  border-right: 1.5px solid black;
+  font-weight: bolder;
+  border-radius: 22px 0 22px 0;
+  transition: 0.9s;
+  cursor: pointer;
+}
+.InsContent button:hover {
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+  background: black;
+  color: red;
+}
+
+@media screen and (max-width: 786px) {
+  .InsBg {
+  }
+  .InsContent {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.329),
+      rgba(255, 0, 0, 0.84)
+    );
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+
+    border-radius: 100px 0 100px 0;
+  }
+
+  .proceed {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2em;
+  }
+
+  .InsContent ul li {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .InsContent {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.329),
+      rgba(255, 0, 0, 0.79)
+    );
+    top: 57%;
+    left: 50%;
+  }
+  .proceed {
+    padding-top: 4em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .InsContent {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.329),
+      rgba(255, 0, 0, 0.79)
+    );
+    top: 57%;
+    left: 50%;
+  }
+  .proceed {
+    padding-top: 4em;
+  }
+}
+@media screen and (max-width: 786px) {
+  .InsContent {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.329),
+      rgba(255, 0, 0, 0.84)
+    );
+    top: 58%;
+    left: 50%;
+  }
+
+  .proceed {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+  }
+  .InsContent button {
+    padding: 4.5% 10.5%;
+  }
+
+  .InsContent h1 {
+    padding: 2em 0em 10px 0em;
+  }
+  .InsContent ul li {
+    font-size: 24px;
+    padding: 0px 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .InsContent ul li {
+    font-size: 18px;
+    padding: 0px 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .InsContent h1 {
+    padding: 3em 0em 10px 0em;
+    font-size: 33px;
+  }
+  .InsContent ul li {
+    font-size: 17px;
+    padding: 0px 20px;
+  }
+  .InsContent {
+    top: 50%;
+  }
+}

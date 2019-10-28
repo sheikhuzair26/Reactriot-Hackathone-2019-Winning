@@ -1,0 +1,111 @@
+.main {
+  background: url("../images/selectback.jpeg");
+  padding-top: 3em;
+}
+
+.container-players,
+.ChoicePlayer {
+  display: flex;
+  justify-content: center;
+}
+
+.ChoicePlayer {
+  padding: 40px 0px;
+}
+
+img.userContent {
+  height: 25em;
+  width: 25%;
+  border: 1px groove black;
+  box-shadow: 0px 4px 6px 1px black;
+  background: linear-gradient(
+    to top,
+    #0000004f,
+    #43434350
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+img#selectionImg {
+  background: white;
+  border: 7px double red;
+  margin: 1em;
+  padding: 10px;
+  border-radius: 22px 0px 22px 0px;
+  height: 126px;
+  width: 6em;
+  box-shadow: 2px 1px 7px 2px red;
+}
+
+@media screen and (max-width: 1440px) {
+}
+.main {
+  padding-top: 2em;
+}
+
+@media screen and (max-width: 1024px) {
+  img.userContent {
+    height: 23em;
+    width: 30%;
+  }
+
+  img#selectionImg {
+    margin: 10px;
+    height: 100px;
+    width: 4em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    background-position: bottom;
+  }
+  img.userContent {
+    width: 43%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .main {
+    background-position: right;
+  }
+  img.userContent {
+    width: 70%;
+  }
+  img#selectionImg {
+    height: 70px;
+    width: 4em;
+  }
+  .ChoicePlayer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main {
+    background-position: right;
+  }
+  img.userContent {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main {
+    background-position: right;
+  }
+  img#selectionImg {
+    height: 87px;
+    width: 4em;
+  }
+  img.userContent {
+    width: 80%;
+  }
+
+  .ChoicePlayer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

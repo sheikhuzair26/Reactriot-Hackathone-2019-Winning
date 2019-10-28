@@ -1,0 +1,412 @@
+#hackbit-vote-widget {
+  margin-top: -1.5%;
+  width: -webkit-fill-available;
+}
+.hb-vote-widget {
+  background: #443737;
+  color: #fff;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 20px 0px 15px 0px;
+  font-family: "Work sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+ .link{
+  text-decoration: none;
+}
+
+.FirstContainer h1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  color: white;
+  font-weight: bold;
+  border-top: 2px solid red;
+  border-bottom: 2px solid white;
+  font-size: 80px;
+  padding-bottom: 1%;
+}
+
+.Form {
+  background: linear-gradient(
+    20deg,
+    rgba(255, 4, 4, 0.486),
+    rgba(85, 84, 83, 0.267),
+    rgba(0, 0, 0, 0.308)
+  );
+  display: inline-block;
+  width: 40vw;
+  border-radius: 20px 20px 20px 0;
+  height: 50vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ani 5s;
+  transition: 0.2s;
+  z-index: 1;
+  text-align: center;
+}
+
+@keyframes ani {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 40vw;
+    height: 50vh;
+  }
+}
+
+.Form input {
+  padding: 3%;
+  width: 50%;
+  position: absolute;
+  top: 36%;
+  left: 39%;
+  transform: translate(-30%, -50%);
+  background: none;
+  color: white;
+  border-top: 1.5px solid red;
+  border-bottom: 1.5px solid red;
+  border-left: 1.5px solid black;
+  border-right: 1.5px solid black;
+  border-radius: 0 25px 0 25px;
+  font-size: 20px;
+  outline: none;
+  text-align: center;
+}
+
+.Form button {
+  position: absolute;
+  top: 60%;
+  left: 52%;
+  transform: translate(-60%, -50%);
+  padding: 15px 25px;
+  border-top: 1.5px solid red;
+  border-bottom: 1.5px solid red;
+  border-left: 1.5px solid black;
+  border-right: 1.5px solid black;
+  background: none;
+  outline: transparent;
+  font-size: 20px;
+  color: white;
+  border-radius: 22px 0 22px 0;
+  transition: 0.9s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.Form button:hover {
+  border-left: 1.5px solid red;
+  border-right: 1.5px solid red;
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+  background: black;
+  color: red;
+}
+
+
+.Kazuya {
+  position: absolute;
+  top: 10%;
+  left: 75%;
+  animation: kaz 5s;
+  transition: 0.9;
+}
+@keyframes kaz {
+  to {
+    left: 75%;
+  }
+  from {
+    left: 100%;
+  }
+}
+
+.Jinnn {
+  position: absolute;
+  left: -9%;
+  z-index: -1;
+  animation: jinnn 5s;
+  transition: 0.9;
+}
+
+@keyframes jinnn {
+  to {
+    left: -9%;
+  }
+  from {
+    left: -100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .Kazuya {
+    top: 10%;
+    left: 67%;
+  }
+
+  @keyframes kaz {
+    to {
+      left: 67%;
+    }
+    from {
+      left: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .hb-vote-widget {
+    padding: 10px 30px 10px 30px;
+    display: flex;
+    justify-content: center;
+  }
+  #hackbit-vote-widget {
+    display: inline-block;
+    max-width: 100%;
+  }
+  .Kazuya {
+    top: 10%;
+    left: 66%;
+    height: 36em;
+  }
+
+  @keyframes kaz {
+    to {
+      left: 66%;
+    }
+    from {
+      left: 100%;
+    }
+  }
+  .Jinnn {
+    left: -9%;
+    top: 10%;
+    height: 40em;
+  }
+  .Form {
+    display: flex;
+    width: 60vw;
+    top: 55%;
+    /* left:   60%; */
+  }
+  @keyframes ani {
+    from {
+      width: 0;
+      height: 0;
+    }
+    to {
+      width: 60vw;
+      height: 50vh;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hb-vote-widget {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .Kazuya {
+    position: absolute;
+    top: 15%;
+    left: 64%;
+    animation: kaz 6s;
+    height: 23em;
+  }
+  @keyframes kaz {
+    to {
+      left: 64%;
+    }
+    from {
+      left: 100%;
+    }
+  }
+  .Jinnn {
+    position: absolute;
+    left: 0%;
+    top: 12%;
+    z-index: -1;
+    animation: jinnn 5s;
+    transition: 0.9;
+    height: 28em;
+  }   
+  @keyframes jinnn {
+    to {
+      left: 0%;
+    }
+    from {
+      left: -100%;
+    }
+  }
+  .Form input {
+    padding: 4%;
+    width: 58%;
+    top: 36%;
+    left: 38%;
+    font-size: 14px;
+  }
+  .Form button {
+    top: 63%;
+    left: 55%;
+    padding: 9px 9px;
+    font-size: 18px;
+  }
+  .Form {
+    width: 80vw;
+    display: flex;
+    top: 65%;
+    /* left: 52%; */
+  }
+  @keyframes ani {
+    from {
+      width: 0;
+      height: 0;
+    }
+    to {
+      width: 80vw;
+      height: 50vh;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hb-vote-widget {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .Kazuya {
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    animation: kaz 6s;
+    height: 23em;
+  }
+  @keyframes kaz {
+    to {
+      left: 0%;
+    }
+    from {
+      left: 100%;
+    }
+  }
+  .Jinnn {
+    position: absolute;
+    left: 20%;
+    top: 10em;
+    transition: 0.9;
+    height: 21em;
+  }
+  @keyframes jinnn {
+    to {
+      left: 20%;
+    }
+    from {
+      left: -100%;
+    }
+  }
+  .Form input {
+    padding: 4%;
+    width: 58%;
+    top: 36%;
+    left: 38%;
+    font-size: 14px;
+  }
+  .Form button {
+    top: 63%;
+    left: 55%;
+    padding: 9px 9px;
+    font-size: 18px;
+  }
+  .Form {
+    width: 90vw;
+    display: flex;
+  }
+  @keyframes ani {
+    from {
+      width: 0;
+      height: 0;
+    }
+    to {
+      width: 80vw;
+      height: 50vh;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #hackbit-vote-widget {
+    display: inline-block;
+    width: 100%;
+  }
+  .hb-vote-widget {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+  }
+  .Kazuya {
+    position: absolute;
+    top: 34%;
+    left: 49%;
+    animation: kaz 6s;
+    height: 24em;
+  }
+  @keyframes kaz {
+    to {
+      left: 49%;
+    }
+    from {
+      left: 100%;
+    }
+  }
+  .Jinnn {
+    position: absolute;
+    left: 0%;
+    top: 5em;
+    transition: 0.9;
+    height: 23em;
+  }
+  @keyframes jinnn {
+    to {
+      left: 0%;
+    }
+    from {
+      left: -100%;
+    }
+  }
+  .Form input {
+    padding: 4%;
+    width: 58%;
+    top: 36%;
+    left: 38%;
+    font-size: 14px;
+  }
+  .Form button {
+    top: 63%;
+    left: 55%;
+    padding: 9px 9px;
+    font-size: 18px;
+  }
+  .Form {
+    width: 80vw;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+  }
+  @keyframes ani {
+    from {
+      width: 0;
+      height: 0;
+    }
+    to {
+      width: 80vw;
+      height: 50vh;
+    }
+  }
+}

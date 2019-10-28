@@ -1,0 +1,15 @@
+*{
+padding: 0px;
+margin: 0px;
+}
+
+body {
+  overflow: hidden;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 15px; */
+  background: url("./images/img.jpg") no-repeat;
+  background-size: inherit;
+
+}
