@@ -2,11 +2,9 @@
 
 # Published Link: https://reactriot-hackathone-2019-winning.sheikhuzair26.now.sh/
 
-- This is Quiz Game App created this in (48 Hours). 
+- This is Quiz Game App Responsive created this in (48 Hours). I would recommended to open this on Laptop.
 - React Js
 - Creative Idea 
 - Using React BootStrap
 - Npm Pakages
 - React Router
-- OnLoad Sound
-- Responsive 
